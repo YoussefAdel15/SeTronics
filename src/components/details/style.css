@@ -1,0 +1,19 @@
+.details {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 100px;
+}
+.slider {
+    width: 600px;
+}
+
+@media screen and (max-width: 670px) {
+    .details {
+        flex-direction: column;
+    }
+    .details button {
+        margin-bottom: 40px;
+    }
+}

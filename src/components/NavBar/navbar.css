@@ -1,0 +1,122 @@
+.navbar {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar > h1 {
+    color: white;
+}
+
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-firstdraft {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+    background-color: #1888ff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.responsiv {
+    display: none;
+    transition: 0.5s;
+}
+.responsiv button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 15px;
+    font-size: 30px;
+    right: 30px;
+}
+
+nav .open {
+    display: none;
+    margin: 0 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 750px) {
+    nav .open {
+        display: block;
+    }
+    .responsiv {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        top: 0;
+        left: 0;
+        display: flex;
+        transform: translateX(-100%);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .responsiv ul {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+    nav > div {
+        display: none;
+    }
+}
